@@ -6,4 +6,5 @@ public class Slots : MonoBehaviour
 {
     public CraftItems _item;
     public int _index;
+
 }

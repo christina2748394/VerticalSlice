@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         _currentNode = _dialogueStartNode;
+        _currentLine = 0;
 
     }
 
@@ -53,6 +54,7 @@ public class DialogueManager : MonoBehaviour
         {
             // if there are no NPC or player lines left, close dialogue UI
             EndDialogue();
+            _currentLine = 0;
 
         }
 
@@ -66,6 +68,7 @@ public class DialogueManager : MonoBehaviour
 
         _runningDialogue = false;
         _dialogue.HideDialogue();
+        this.enabled = false;
     }
 
 }

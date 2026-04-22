@@ -12,6 +12,10 @@ public class CraftingManager : MonoBehaviour
     public CraftItems[] _recipeResults;
     public Slots resultSlot;
 
+    void Start()
+    {
+
+    }
     private void Update()
     {
         if (Input.GetMouseButtonUp(0))
