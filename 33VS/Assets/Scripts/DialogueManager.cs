@@ -24,7 +24,6 @@ public class DialogueManager : MonoBehaviour
     {
         if ((Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)))
         {
-
             AdvanceDialogue();
         }
 
@@ -32,6 +31,13 @@ public class DialogueManager : MonoBehaviour
 
 
     }
+
+    public void ShowStartDialogue()
+    {
+        _runningDialogue = true;
+        _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
+    }
+
 
     public void AdvanceDialogue()
     {
@@ -57,7 +63,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        Debug.Log("Dialog Ended");
+
         _runningDialogue = false;
         _dialogue.HideDialogue();
     }

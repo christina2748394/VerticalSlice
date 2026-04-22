@@ -10,7 +10,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private GameObject _npcDialogue;
 
 
-    void Start()
+    void Awake()
     {
         HideDialogue();
     }
@@ -18,7 +18,6 @@ public class DialogueUI : MonoBehaviour
 
     public void ShowDialogue(string dialogue)
     {
-        Debug.Log("Showing Dialoge");
         gameObject.SetActive(true);
         _npcDialogue.SetActive(true);
         _npcText.text = dialogue;
