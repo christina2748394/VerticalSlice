@@ -40,7 +40,7 @@ public class StoryManager : MonoBehaviour
         if (_dayComplete && _endDialogue.enabled == false)
         {
             Debug.Log("Enter Dream");
-            //SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene("Dream1");
 
         }
 
