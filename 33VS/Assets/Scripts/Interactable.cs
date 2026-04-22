@@ -5,6 +5,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     private bool _canInteract = false;
+    public bool _interacting = false;
     public GameObject _interactionPrompt;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -21,6 +22,7 @@ public class Interactable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _canInteract = false;
+            _interacting = false;
             _interactionPrompt.SetActive(false);
         }
 
@@ -30,14 +32,30 @@ public class Interactable : MonoBehaviour
     {
         if (_canInteract && Input.GetKeyDown(KeyCode.E))
         {
-            OnInteracted();
+            if (_interacting)
+            {
+                CloseInteracted();
+            }
+            else
+            {
+                OnInteracted();
+            }
 
         }
+
+
     }
     public virtual void OnInteracted()
     {
+        _interacting = true;
         Debug.Log("Interacted");
     }
+    public virtual void CloseInteracted()
+    {
+        _interacting = false;
+        Debug.Log("Close Interaction");
+    }
+
 
 }
 
