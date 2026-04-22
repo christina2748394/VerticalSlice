@@ -22,7 +22,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.E)))
+        if ((Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)))
         {
 
             AdvanceDialogue();
