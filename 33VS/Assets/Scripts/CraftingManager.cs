@@ -20,6 +20,7 @@ public class CraftingManager : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
         {
+            Debug.Log("Down");
             if (_currentItem != null)
             {
                 _customCursor.gameObject.SetActive(false);
@@ -39,6 +40,7 @@ public class CraftingManager : MonoBehaviour
                 nearestSlot._item = _currentItem;
                 _itemList[nearestSlot._index] = _currentItem;
                 _currentItem = null;
+                Debug.Log("Down");
                 CheckforCompletedReipies();
 
             }
