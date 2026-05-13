@@ -4977,9 +4977,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1689679237}
   - component: {fileID: 1689679238}
-  - component: {fileID: 1689679240}
   - component: {fileID: 1689679241}
-  - component: {fileID: 1689679242}
+  - component: {fileID: 1689679244}
+  - component: {fileID: 1689679243}
   m_Layer: 0
   m_Name: StoryManager
   m_TagString: Untagged
@@ -5015,21 +5015,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue: {fileID: 1781908185}
-  _dialogueStartNode: {fileID: 11400000, guid: d2fe21a1b8b184288b1e3d0c066607b4, type: 2}
---- !u!114 &1689679240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689679236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a8e75f0756c740859aee52a24c6cdba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: {fileID: 1781908185}
-  _dialogueStartNode: {fileID: 11400000, guid: 4c317e6edb3834db9bdd13411153ff75, type: 2}
+  DialogueList:
+  - {fileID: 11400000, guid: d2fe21a1b8b184288b1e3d0c066607b4, type: 2}
+  _dialogueNodeNumber: 0
 --- !u!114 &1689679241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5043,14 +5031,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startDialogue: {fileID: 1689679238}
-  _MidDialogue: {fileID: 1689679242}
-  _endDialogue: {fileID: 1689679240}
+  _MidDialogue: {fileID: 0}
+  _endDialogue: {fileID: 0}
   _resultSlot: {fileID: 737978580}
   _resultSlot2: {fileID: 214842395}
   _targetItem: {fileID: 0}
   _craftCanvas1: {fileID: 1184215539}
   _craftCanvas2: {fileID: 306208158}
---- !u!114 &1689679242
+--- !u!114 &1689679243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5059,11 +5047,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1689679236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a8e75f0756c740859aee52a24c6cdba, type: 3}
+  m_Script: {fileID: 11500000, guid: efe58df89b5b74a97a123b5ed2b70422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: {fileID: 1781908185}
-  _dialogueStartNode: {fileID: 11400000, guid: 71a2278a8cdb4445ea900c1bc4f7d82d, type: 2}
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: fd696b6d5ffa44cfd9ad11688f367a0e, type: 2}
+--- !u!114 &1689679244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689679236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &1715613142
 PrefabInstance:
   m_ObjectHideFlags: 0

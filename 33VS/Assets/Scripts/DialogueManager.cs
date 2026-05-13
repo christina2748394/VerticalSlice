@@ -7,15 +7,19 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private DialogueUI _dialogue;
-    [SerializeField] private DialogueNode _dialogueStartNode;
+
+    [SerializeField] public List<DialogueNode> DialogueList;
+
 
     private DialogueNode _currentNode;
     private int _currentLine = 0;
     private bool _runningDialogue;
 
+    public int _dialogueNodeNumber;
+
     void Start()
     {
-        _currentNode = _dialogueStartNode;
+        _currentNode = DialogueList[0];
         _currentLine = 0;
 
     }
@@ -69,6 +73,12 @@ public class DialogueManager : MonoBehaviour
         _runningDialogue = false;
         _dialogue.HideDialogue();
         this.enabled = false;
+    }
+
+    public void NextDialogueNode()
+    {
+        _dialogueNodeNumber++;
+        _currentNode = DialogueList[_dialogueNodeNumber];
     }
 
 }
