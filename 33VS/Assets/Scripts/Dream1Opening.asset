@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Dream1Opening
   m_EditorClassIdentifier: 
   _lines:
+  - '[Press Space]'
   - 'Teacher: Now who can solve this equation?'

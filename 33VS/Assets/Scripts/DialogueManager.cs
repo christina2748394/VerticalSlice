@@ -7,6 +7,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private DialogueUI _dialogue;
+    [SerializeField] public CraftTableManager _ctManager;
 
     [SerializeField] public List<DialogueNode> DialogueList;
 
@@ -17,7 +18,7 @@ public class DialogueManager : MonoBehaviour
 
     public int _dialogueNodeNumber;
 
-    void Start()
+    void Awake()
     {
         _currentNode = DialogueList[0];
         _currentLine = 0;
@@ -41,6 +42,7 @@ public class DialogueManager : MonoBehaviour
     {
         _runningDialogue = true;
         _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
+        _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
     }
 
 
@@ -57,9 +59,10 @@ public class DialogueManager : MonoBehaviour
         else
         {
             // if there are no NPC or player lines left, close dialogue UI
+            //Invoke?
             EndDialogue();
             _currentLine = 0;
-
+            _ctManager.NextPuzzle();
         }
 
 
@@ -67,13 +70,15 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    private void EndDialogue()
+    public void EndDialogue()
     {
 
         _runningDialogue = false;
         _dialogue.HideDialogue();
         this.enabled = false;
     }
+
+
 
     public void NextDialogueNode()
     {

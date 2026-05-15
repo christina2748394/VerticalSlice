@@ -12,7 +12,7 @@ public class DialogueUI : MonoBehaviour
 
     void Awake()
     {
-        HideDialogue();
+        //HideDialogue();
     }
 
 
