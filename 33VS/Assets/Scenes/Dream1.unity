@@ -3852,7 +3852,7 @@ GameObject:
   - component: {fileID: 1134216466}
   - component: {fileID: 1134216468}
   - component: {fileID: 1134216467}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Funiture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3912,9 +3912,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1131908537
+  m_SortingLayer: 1
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 6.6666665, y: 7.5, z: 0}
   m_MaxChunkCount: 16
@@ -3937,16 +3937,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 27
       m_TileSpriteIndex: 27
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 6, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 29
-      m_TileSpriteIndex: 29
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4022,8 +4012,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 67da1dc01e274484a84aebe9954f17c1, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 953519071b5c74c23bcd29fd039b75da, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 6610a94457629477dbe10b6ce8f392a3, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -4083,10 +4073,10 @@ Tilemap:
     m_Data: {fileID: -1441844970, guid: f448874f8fb254f659bc5af9a55a544f, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 806180341, guid: f448874f8fb254f659bc5af9a55a544f, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -1648664389, guid: f448874f8fb254f659bc5af9a55a544f, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 3
+  - m_RefCount: 2
     m_Data:
       e00: 1
       e01: 0
@@ -4123,7 +4113,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 3
+  - m_RefCount: 2
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 0.91291654, g: 0.46054786, b: 0.5656548, a: 1}
@@ -5012,7 +5002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1465340504}
   - component: {fileID: 1465340503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5040,7 +5030,7 @@ Transform:
   m_GameObject: {fileID: 1465340502}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5063,7 +5053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1490694314
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5104,8 +5094,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1131908537
   m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_SortingOrder: -2
+  m_Sprite: {fileID: 21300000, guid: 471fea0fe83ea4e3cb48fb60eb36f196, type: 3}
   m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5125,8 +5115,8 @@ Transform:
   m_GameObject: {fileID: 1490694313}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6, y: 18.824121, z: -0.5351797}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalPosition: {x: -0.2763, y: 9.1731, z: -0.5351797}
+  m_LocalScale: {x: 6.881847, y: 7.7300935, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}

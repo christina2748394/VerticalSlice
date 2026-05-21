@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class StoryManager : MonoBehaviour
 {
     //Dialogues
-    [SerializeField] public DialogueManager _startDialogue;
-    [SerializeField] public DialogueManager _endDialogue;
+    [SerializeField] public DialogueManager2 _startDialogue;
+    [SerializeField] public DialogueManager2 _endDialogue;
 
     //Check target item
     public Slots _resultSlot;
