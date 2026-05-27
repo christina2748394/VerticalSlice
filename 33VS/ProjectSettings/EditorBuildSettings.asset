@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: b2e3628b366d04de59b4ea2eed8f1307
+  - enabled: 1
+    path: Assets/Scenes/TheEnd.unity
+    guid: 0711582e7cdac4ce1a0f39878960be95
+  - enabled: 1
+    path: Assets/Scenes/WakeUP.unity
+    guid: c476262b05a104941b81d4bf246751c7
   m_configObjects: {}
