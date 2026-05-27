@@ -14,6 +14,8 @@ public class CraftingManager : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
 
     }
     private void Update()

@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 
-public class DialogueManager2 : MonoBehaviour
+public class DialogueManager3 : MonoBehaviour
 {
     //This one have Choice Options
     [SerializeField] private DialogueUI _dialogue;
@@ -16,7 +17,7 @@ public class DialogueManager2 : MonoBehaviour
     private bool _runningDialogue;
 
     public int _dialogueNodeNumber;
-
+    private bool _waitingForPlayerResponse;
 
 
 
@@ -30,7 +31,7 @@ public class DialogueManager2 : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space))
+        if (!_waitingForPlayerResponse && (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)))
         {
             AdvanceDialogue();
         }
@@ -55,12 +56,27 @@ public class DialogueManager2 : MonoBehaviour
             _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
             _currentLine++;
         }
-
+        else if (_currentNode._playerReplyOptions != null && _currentNode._playerReplyOptions.Length > 0)
+        {
+            // show player dialogue options, if there are any
+            _waitingForPlayerResponse = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            _dialogue.ShowPlayerOptions(_currentNode._playerReplyOptions);
+        }
         else
         {
+            //if the dialogue contains to next scene info
+            if (_currentNode._switchToScene != null)
+            {
+                SceneManager.LoadScene(_currentNode._switchToScene);
+
+            }
             // if there are no NPC or player lines left, close dialogue UI
-            EndDialogue();
-            _currentLine = 0;
+            else
+            {
+                EndDialogue();
+            }
+
         }
 
 
@@ -71,10 +87,18 @@ public class DialogueManager2 : MonoBehaviour
 
         _runningDialogue = false;
         _dialogue.HideDialogue();
-
+        _waitingForPlayerResponse = false;
         this.enabled = false;
     }
-
+    public void SelectedOption(int option)
+    {
+        Debug.Log("3 selected");
+        _currentLine = 0;
+        _waitingForPlayerResponse = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        _currentNode = _currentNode._npcReplies[option];
+        AdvanceDialogue();
+    }
 
 
 

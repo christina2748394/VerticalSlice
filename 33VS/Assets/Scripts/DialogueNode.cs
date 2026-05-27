@@ -6,4 +6,10 @@ public class DialogueNode : ScriptableObject
     // the lines of dialogue the NPC says for this node
     public string[] _lines;
 
+    public string[] _playerReplyOptions;
+
+    public DialogueNode[] _npcReplies;
+
+    public string _switchToScene;
+
 }

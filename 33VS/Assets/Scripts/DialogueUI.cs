@@ -9,6 +9,12 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text _npcText;
     [SerializeField] private GameObject _npcDialogue;
 
+    //Choice
+
+    [SerializeField] private GameObject _playerMultiOptions;
+    [SerializeField] private TMP_Text _option1;
+    [SerializeField] private TMP_Text _option2;
+
 
     void Awake()
     {
@@ -21,6 +27,25 @@ public class DialogueUI : MonoBehaviour
         gameObject.SetActive(true);
         _npcDialogue.SetActive(true);
         _npcText.text = dialogue;
+    }
+    public void ShowPlayerOptions(string[] options)
+    {
+        gameObject.SetActive(true);
+
+        _npcDialogue.SetActive(false);
+        _playerMultiOptions.SetActive(true);
+
+        _option1.text = options[0];
+
+        if (options.Length >= 2)
+        {
+            _option2.transform.parent.gameObject.SetActive(true);
+            _option2.text = options[1];
+        }
+        else
+        {
+            _option2.transform.parent.gameObject.SetActive(false);
+        }
     }
 
 
