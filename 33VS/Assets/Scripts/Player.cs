@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         _playerTransform.Translate(direction * _speed * Time.deltaTime);
 
         //Jumping
-        if (Input.GetKeyDown(KeyCode.W) && _isGrounded == true)
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) && _isGrounded == true)
         {
             _rb.AddForce(Vector3.up * 5f, ForceMode2D.Impulse);
             Debug.Log("Jumping");
