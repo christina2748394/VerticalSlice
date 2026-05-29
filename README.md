@@ -21,8 +21,13 @@ After Coding:They were helpful because it lets me plan out which task to start o
 
 2. I called multiple C# functions from my Room StateMachine graph. For example, I called the ShowStartDialogue()Function from the Intro State of my State Machine to let dialogue appear when player first entered the level. [Graph](https://github.com/user-attachments/assets/42209d13-eed7-443d-9653-b12c1084e49d)
 3. I hope to be graded on StateMachine of the room because it controlls player action in each state to help my story proceed. For example in the intro state, Dialogue is shown and player can not move yet, while Puzzle phase enabled player to explore and interact with item that open the Puzzle canvas. Completing the Puzzle will trigger to new dialogue state which close the Puzzle canvas and begin a new dialogue story.
+   
 ## Milestone 3 Devlog
-Milestone 3 Devlog goes here.
+1. My shader Graph is a full screen texture that lay on top on game to create a darken view. The color of the texture loops from black to grey using Lerp node with the SinTime method, also modified with math so that color will not go all the way to white.
+[Shader Graph](https://github.com/user-attachments/assets/e082c706-c6a8-4f43-a8df-b65bcefa8dcd)
+2. I changed the sequence of first math puzzle to lower the level of diffculty according to player feedback that the harder one may take up too much time. I also added the shader graph that loop from dark black to light grey to create a fade in effect from feedback that transition from reality to dream level feel more realistic.
+3. I added start menu, an intro cutscene using video player and branching dialogue, a new level between soup making and entering the dream, Character sprite, shader graph and improved dialogue/puzzle for the dream level, changed camera perspective and some game play logic to match that. 
+
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
 ## Final Devlog
