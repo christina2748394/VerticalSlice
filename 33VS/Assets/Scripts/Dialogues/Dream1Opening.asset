@@ -14,4 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lines:
   - '[Press Space]'
-  - 'Teacher: Now who can solve this equation?'
+  - 'Him: "Hey, wake up"'
+  - 'Him: "Lin, its math class."'
+  - '"!!!...did I fell asleep again?"'
+  - '"...Which Question are we on?"'
+  - 'Him: "Here, I got notes for you."'
+  _playerReplyOptions: []
+  _npcReplies: []
+  _switchToScene: 

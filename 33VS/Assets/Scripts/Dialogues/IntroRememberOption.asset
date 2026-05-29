@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: IntroRememberOption
   m_EditorClassIdentifier: 
   _lines:
-  - Is it really a valueable experience.
-  - The gost could hold you down.
-  - Anyways
-  - Remember.
+  - Tough choice.
+  - I hope you can keep this courage.
+  - Be careful
+  - They will haunt you.
+  - And remember,
   - We always have a choice.
   _playerReplyOptions: []
   _npcReplies: []

@@ -5,6 +5,13 @@ using UnityEngine;
 public class OpenCraftTable : Interactable
 {
     public GameObject _craftTableUI;
+
+    private void OnMouseDown()
+    {
+
+        OnInteracted();
+    }
+
     public override void OnInteracted()
     {
         _interacting = true;

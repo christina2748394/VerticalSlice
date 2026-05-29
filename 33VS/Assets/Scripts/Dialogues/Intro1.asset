@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: Intro1
   m_EditorClassIdentifier: 
   _lines:
-  - Heatbreak is a universial experience.
-  - The question is will you choose to forget?
+  - To begin with,
+  - everything will come to an end.
+  - Our deepest love eventually turn into heartbreak.
+  - But with this soup you no longer need to deal with the pain.
+  - The question is...
+  - Will you choose to forget?
   _playerReplyOptions:
   - Yes
-  - Never
+  - No
   _npcReplies:
   - {fileID: 11400000, guid: e3855c6b7157c4ce681eb8ca4b58c0ad, type: 2}
   - {fileID: 11400000, guid: 29185c0221c5949829b950efca237b9b, type: 2}
+  _switchToScene: 

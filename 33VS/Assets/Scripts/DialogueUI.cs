@@ -48,6 +48,11 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
+    public void HideOptions()
+    {
+        _playerMultiOptions.SetActive(false);
+    }
+
 
 
     public void HideDialogue()

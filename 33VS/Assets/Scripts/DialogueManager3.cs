@@ -92,12 +92,13 @@ public class DialogueManager3 : MonoBehaviour
     }
     public void SelectedOption(int option)
     {
-        Debug.Log("3 selected");
         _currentLine = 0;
         _waitingForPlayerResponse = false;
         Cursor.lockState = CursorLockMode.Locked;
+        _dialogue.HideOptions();
         _currentNode = _currentNode._npcReplies[option];
         AdvanceDialogue();
+
     }
 
 

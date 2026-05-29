@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/Dream1.unity
-    guid: 77a3a37ee08674c53beeb22b62b5f9b8
+    path: Assets/Scenes/StartMenu.unity
+    guid: b2e3628b366d04de59b4ea2eed8f1307
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: cdc6c83fcf2ec4ec0a904799ea093eef
   - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
     path: Assets/Scenes/MemoryMaze.unity
     guid: db31690b6fa9440249635255a3307c98
   - enabled: 1
-    path: Assets/Scenes/StartMenu.unity
-    guid: b2e3628b366d04de59b4ea2eed8f1307
+    path: Assets/Scenes/Dream1.unity
+    guid: 77a3a37ee08674c53beeb22b62b5f9b8
+  - enabled: 0
+    path: Assets/Scenes/WakeUP.unity
+    guid: c476262b05a104941b81d4bf246751c7
   - enabled: 1
     path: Assets/Scenes/TheEnd.unity
     guid: 0711582e7cdac4ce1a0f39878960be95
-  - enabled: 1
-    path: Assets/Scenes/WakeUP.unity
-    guid: c476262b05a104941b81d4bf246751c7
   m_configObjects: {}

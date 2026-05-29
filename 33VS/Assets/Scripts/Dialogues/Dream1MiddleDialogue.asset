@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Dream1MiddleDialogue
   m_EditorClassIdentifier: 
   _lines:
-  - '[Press Space]'
+  - '[Game Ends Here Currently]'
   - '???: You solved it?'
   - '???:  Genious!'
   - '???: Can you help me with this one?'
   - Sure.
+  _playerReplyOptions: []
+  _npcReplies: []
+  _switchToScene: 
