@@ -4622,7 +4622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interacting: 0
   _interactionPrompt: {fileID: 196256990}
-  _craftTableUI: {fileID: 1184215539}
+  _craftTableUI: {fileID: 306208158}
 --- !u!61 &1547802328
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4729,7 +4729,7 @@ Transform:
   m_GameObject: {fileID: 1547802326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.3, y: 4.2, z: -7.345651}
+  m_LocalPosition: {x: -0.6, y: -2.5, z: -7.345651}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 1
   m_Children:

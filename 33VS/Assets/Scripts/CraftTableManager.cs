@@ -26,13 +26,12 @@ public class CraftTableManager : MonoBehaviour
     }
 
 
+
     public void NextPuzzle()
     {
-        if (_puzzleNumber != 0)
-        {
-            _puzzleNumber++;
-        }
+
         _currentPuzzle = _Crafttables[_puzzleNumber];
         _currentPuzzle.SetActive(true);
+        _puzzleNumber++;
     }
 }
