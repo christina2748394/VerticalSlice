@@ -57,8 +57,13 @@ public class DialogueUI : MonoBehaviour
 
     public void HideDialogue()
     {
-
         _npcDialogue.SetActive(false);
         gameObject.SetActive(false);
+    }
+
+    public void reActivateDialogue()
+    {
+        _npcDialogue.SetActive(true);
+        gameObject.SetActive(true);
     }
 }

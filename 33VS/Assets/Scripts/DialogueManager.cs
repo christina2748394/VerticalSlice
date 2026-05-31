@@ -16,12 +16,14 @@ public class DialogueManager : MonoBehaviour
     private int _currentLine = 0;
     private bool _runningDialogue;
 
-    public int _dialogueNodeNumber;
+    public int _dialogueNodeNumber = 0;
 
     void Awake()
     {
-        _currentNode = DialogueList[0];
+        _dialogueNodeNumber = 0;
+        _currentNode = DialogueList[_dialogueNodeNumber];
         _currentLine = 0;
+
 
     }
 
@@ -31,6 +33,7 @@ public class DialogueManager : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)))
         {
             AdvanceDialogue();
+            Debug.Log("Pushed");
         }
 
 
@@ -82,8 +85,14 @@ public class DialogueManager : MonoBehaviour
 
     public void NextDialogueNode()
     {
+        //get new node
         _dialogueNodeNumber++;
         _currentNode = DialogueList[_dialogueNodeNumber];
+
+        //renable dialogue
+        this.enabled = true;
+        _dialogue.reActivateDialogue();
+        ShowStartDialogue();
     }
 
 }
