@@ -15,3 +15,7 @@ MonoBehaviour:
   _lines:
   - There we go.
   - Genius.
+  - Genius.
+  _playerReplyOptions: []
+  _npcReplies: []
+  _switchToScene: 
