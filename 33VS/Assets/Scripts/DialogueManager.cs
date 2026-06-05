@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 
 
+
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private DialogueUI _dialogue;
@@ -17,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     private bool _runningDialogue;
 
     public int _dialogueNodeNumber = 0;
+    private bool _waitingForPlayerResponse;
 
     void Awake()
     {
@@ -30,10 +32,10 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)))
+        if (!_waitingForPlayerResponse && (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)))
         {
             AdvanceDialogue();
-            Debug.Log("Pushed");
+
         }
 
 
@@ -52,32 +54,50 @@ public class DialogueManager : MonoBehaviour
     public void AdvanceDialogue()
     {
         _runningDialogue = true;
-
         if (_currentLine < _currentNode._lines.Length)
         {
             // if we still have NPC lines left, keep playing NPC lines
             _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
             _currentLine++;
         }
+        else if (_currentNode._playerReplyOptions != null && _currentNode._playerReplyOptions.Length > 0)
+        {
+            // show player dialogue options, if there are any
+            _waitingForPlayerResponse = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            _dialogue.ShowPlayerOptions(_currentNode._playerReplyOptions);
+        }
         else
         {
-            // if there are no NPC or player lines left, close dialogue UI
-            //Invoke?
+
             EndDialogue();
             _currentLine = 0;
             _ctManager.NextPuzzle();
+
+
         }
 
 
+    }
 
+    public void SelectedOption(int option)
+    {
+        _currentLine = 0;
+        _waitingForPlayerResponse = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        _dialogue.HideOptions();
+        _currentNode = _currentNode._npcReplies[option];
+        AdvanceDialogue();
 
     }
+
 
     public void EndDialogue()
     {
 
         _runningDialogue = false;
         _dialogue.HideDialogue();
+        _waitingForPlayerResponse = false;
         this.enabled = false;
     }
 
