@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Day1EndingDialgoue
   m_EditorClassIdentifier: 
   _lines:
-  - There we go.
+  - '[Press Space]'
   - Forget what you want to forget most after 3 dreams...
   - Now it feels silly.
   - Can't believe I actually went to beg Meng for all this.
   - But I guess I have to
   - Anything to forget you.
   - (drink)
+  _playerReplyOptions: []
+  _npcReplies: []
+  _switchToScene: 
