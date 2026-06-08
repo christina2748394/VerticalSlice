@@ -15,11 +15,10 @@ MonoBehaviour:
   _lines:
   - '[Press Space]'
   - Forget what you want to forget most after 3 dreams...
-  - Now it feels silly.
-  - Can't believe I actually went to beg Meng for all this.
+  - Guess they are not going to be sweet dreams,
   - But I guess I have to
   - Anything to forget you.
-  - (drink)
+  - (Drink)
   _playerReplyOptions: []
   _npcReplies: []
   _switchToScene: 
