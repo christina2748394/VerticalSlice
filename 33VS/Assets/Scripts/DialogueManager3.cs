@@ -66,7 +66,7 @@ public class DialogueManager3 : MonoBehaviour
         else
         {
             //if the dialogue contains to next scene info
-            if (_currentNode._switchToScene != null)
+            if (_currentNode._switchToScene != "")
             {
                 SceneManager.LoadScene(_currentNode._switchToScene);
 
