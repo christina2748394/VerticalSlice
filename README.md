@@ -28,9 +28,41 @@ After Coding:They were helpful because it lets me plan out which task to start o
 2. I changed the sequence of first math puzzle to lower the level of diffculty according to player feedback that the harder one may take up too much time. I also added the shader graph that loop from dark black to light grey to create a fade in effect from feedback that transition from reality to dream level feel more realistic.
 3. I added start menu, an intro cutscene using video player and branching dialogue, a new level between soup making and entering the dream, Character sprite, shader graph and improved dialogue/puzzle for the dream level, changed camera perspective and some game play logic to match that. 
 
-## Milestone 4 Devlog
-Milestone 4 Devlog goes here.
 ## Final Devlog
-Final Devlog goes here.
+
+### Question1
+The game currently contains a start menu, an intro cutscene with simple animation and dialogue choices, Day 1 scene where Player can move around in a room , A transition scene between Day1 and Dream1 where the Player enter a portal, Dream1 Scene switch the view to first person camera and loops between dialogue with NPC and solving 2 math puzzles, the last puzzle will be timed and whether the player complete the puzzle or not in this time will lead to 2 different ending states, triggering change in shader.
+
+The core game play loop for player is reading dialogues, moving and interacting with item to open puzzle, and solving puzzle to proceed dialogue.
+
+This content illustrates to the player that the full game would an interactive story experience themed around getting go of heartbreak. The story will be portrayed with dialogues, cutscenes and NPC sprites switching between third person and first person view, and Player will solve puzzle by dragging items or numbers into the correct slot to proceed in the 3 dreams.
+
+### Question2
+My Rendering Effect is activated in state machine graph by Material Change Color Node that changes the Material’s Color property as Game enter EndingScary state. In my Dream1 Scene, I used a full screen effect on main camera called HimEffect with HimShader as material. The Shader Graph on HimShader Contains a Color Property called Color that gets multiplied with the full screen texture. The Color is set to white using Material Set Color node when the player first entered the Intro State in Dream1. Then when the game in Dream1 Proceed to EndingScary State, the Material Set Color node is called again by the state machine graph in the story manager, this time setting Color to red.
+<img width="987" height="768" alt="截屏2026-06-09 10 34 22" src="https://github.com/user-attachments/assets/af8c97ee-a3e6-4c41-95e0-66ca9c90c4e5" />
+
+### Question3
+I plan on using both bubble diagram break-down and task step break-down. Starting with bubble diagram break-down lay out all the systems needed and how they are connected. This helps me to decide if I need to cut down some systems and which systems to do first as others might be dependent. Then according to the sequence I can make task step break-down. 
+
+Breaking a large project in to small steps help me get a more accurate time estimate. As it is much   easier to estimate the time needed for a single task and add them up than to foreseen the time needed for an entire project. It also helps me see how they would fit in to weekly progress with the current time I have. In all having detailed break down help me understand how much time the project will need throughout the weeks and see if the plan is out of scope.
+
+One thing I want to change for my next project is to put completing a story line as the first task before laying out bubble diagram and starting the code. During this game the story I wanted to tell had changed during development and therefore affect a lot on how I want to use game mechanic. Though I like the way it end up being, it does linger on progress sometimes when I was coding systems before settling on a final plot and I had to spend extra time changing the system back and forth. Other than that bubble diagram have worked great to help me come up with more efficient ways to connect system and the task break down. I would definitely want to repeat using those process in my future projects.
+
 ## Open-source assets
-- Cite any external assets used here!
+Character and animation made with [Character Creator](https://pixel-no-okoku.itch.io/pixel-character-creator) 
+
+Craft Item by [Fågeltomten](https://fageltomten.itch.io/pixel-items)
+
+Craft Slot Ui by [Admurin ](https://admurin.itch.io/)
+
+Cauldron by [Seneneves](https://sevenevesai.itch.io/alchemy)
+
+Furniture by [Ipixl](https://itch.io/queue/c/7280761/33?game_id=703945&password=)
+
+BrickWall Background by [Gracitation](https://gracitation.itch.io/old-brick-wall-and-parchment-paper)
+
+PixelPortal by [f1xtach](https://f1xtach.itch.io/pixel-art-portal)
+
+UI Numbers by [Yusa Studios](https://yusastudios.itch.io/pixelated-buttons)
+
+UI Math by [Renderman](https://hcgamestudios.itch.io/math-game-assets)
