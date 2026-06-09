@@ -21,17 +21,14 @@ MonoBehaviour:
   - Wait...you don't look right.
   - Are you okay?
   - 'Him: no, please don''t go'
-  - I am just trying to solve this problem
   - Why are you stopping me?
+  - 'Him: Don''t Leave.'
+  - I am just trying to solve this problem
   - 'Him: You are going to leave me after you win that competition are you... '
-  - That is not what I meant.
+  - That is not what I meant...
   - 'Him: Please'
   - 'Him: Stay with me.'
   - 'Him: Forever.'
-  _playerReplyOptions:
-  - Accept
-  - Reject
-  _npcReplies:
-  - {fileID: 11400000, guid: 9bc9de7f463314cf5bf8d4059f25755c, type: 2}
-  - {fileID: 11400000, guid: 0e6bd9945c30a48e7998bcd42cfa8ad5, type: 2}
-  _switchToScene: 
+  _playerReplyOptions: []
+  _npcReplies: []
+  _switchToScene: TheEnd

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 
@@ -69,10 +70,21 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            if (_currentNode._switchToScene != "")
+            {
+                SceneManager.LoadScene(_currentNode._switchToScene);
 
-            EndDialogue();
-            _currentLine = 0;
-            _ctManager.NextPuzzle();
+            }
+            // if there are no NPC or player lines left, close dialogue UI
+            else
+            {
+                EndDialogue();
+                _currentLine = 0;
+                _ctManager.NextPuzzle();
+            }
+
+
+
 
 
         }
