@@ -13,11 +13,28 @@ MonoBehaviour:
   m_Name: Dream1MiddleDialogue
   m_EditorClassIdentifier: 
   _lines:
-  - '[Game Ends Here Currently]'
-  - '???: You solved it?'
-  - '???:  Genious!'
-  - '???: Can you help me with this one?'
-  - Sure.
+  - '[Press Space]'
+  - 'Him: Sorry, I shoudn''t keep you out late last night'
+  - 'Him: I am just really happy with you around.'
+  - Me too.
+  - 'Him: How about Lets walk home together after school too'
+  - But the math competition is comming up..
+  - 'Him: But I miss you!'
+  - 'Him: Now you attention is on that half the time'
+  - Soryy...I really want to, but this competition means a lot to me
+  - I promise I will come afterwards!
+  - 'Him: Okay, but just one more day and I will believe your words'
+  - hey...
+  - 'Teacher: lin, stop chatting! you are our school repersentative'
+  - Sorry
+  - 'Teacher: (Sigh) I will say one last time.'
+  - 'Teacher: You will see a triangle pattern made with 7 spaces'
+  - 'Teacher: Place the numbers 1 to 7 so that each line of 3 spaces adds up to the
+    same sum.'
+  - 'Teacher:  Seems like You only got 1 mintue left.'
+  - thats impossible to finish!
+  - 'Teacher: 59 seconds.'
+  - '!!!'
   _playerReplyOptions: []
   _npcReplies: []
   _switchToScene: 

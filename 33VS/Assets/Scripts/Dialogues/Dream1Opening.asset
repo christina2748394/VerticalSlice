@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lines:
   - '[Press Space]'
+  - 'Him: "Lin...are you okay?"'
   - 'Him: "Hey, wake up"'
-  - 'Him: "Lin, its math class."'
   - '"!!!...did I fell asleep again?"'
   - '"...Which Question are we on?"'
   - 'Him: "Here, I got notes for you."'

@@ -13,9 +13,21 @@ MonoBehaviour:
   m_Name: Dream1EndingDialogue
   m_EditorClassIdentifier: 
   _lines:
-  - There we go.
-  - Genius.
-  - Genius.
+  - '[Press Space]'
+  - Wait! I got an idea!
+  - Let me try agian!
+  - 'Him: Hey, don''t go up'
+  - '? why'
+  - Wait...you don't look right.
+  - Are you okay?
+  - 'Him: no, please don''t go'
+  - I am just trying to solve this problem
+  - Why are you stopping me?
+  - 'Him: You are going to leave me after you win that competition are you... '
+  - That is not what I meant.
+  - 'Him: Please'
+  - 'Him: Stay with me.'
+  - 'Him: Forever.'
   _playerReplyOptions:
   - Accept
   - Reject
