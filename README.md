@@ -66,3 +66,5 @@ PixelPortal by [f1xtach](https://f1xtach.itch.io/pixel-art-portal)
 UI Numbers by [Yusa Studios](https://yusastudios.itch.io/pixelated-buttons)
 
 UI Math by [Renderman](https://hcgamestudios.itch.io/math-game-assets)
+
+Audio by  [Leonardo Calvo](https://thesoundrack.itch.io/sad-music-pack)
